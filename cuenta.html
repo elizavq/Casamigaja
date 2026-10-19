@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi cuenta · Casa Migaja</title>
+<meta name="description" content="Casa Migaja: pastelería artesanal. Tortas, tartas, croissants y panes hechos cada mañana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="contenedor barra">
+    <a class="marca" href="index.html" aria-label="Casa Migaja, inicio">Casa Migaja</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="index.html">Inicio</a><a href="productos.html">Productos</a><a href="nosotros.html">Nosotros</a><a href="contacto.html">Contacto</a>
+      <a class="btn btn-borde activo" href="cuenta.html">Iniciar sesión</a>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+
+<section class="seccion cuenta-sec">
+  <div class="contenedor">
+    <div class="cuenta">
+      <div class="tabs" role="tablist" aria-label="Acceso a tu cuenta">
+        <button class="tab activo" role="tab" id="tab-registro" aria-selected="true" aria-controls="panel-registro" data-panel="registro">Crear cuenta</button>
+        <button class="tab" role="tab" id="tab-login" aria-selected="false" aria-controls="panel-login" data-panel="login">Ya estoy registrado</button>
+      </div>
+
+      <form class="form panel" id="panel-registro" role="tabpanel" aria-labelledby="tab-registro" novalidate>
+        <h1>Crea tu cuenta</h1>
+        <p class="sub">Guarda tus pedidos y recibe avisos de novedades.</p>
+        <label for="r-nombre">Nombre completo</label>
+        <input id="r-nombre" type="text" autocomplete="name" required placeholder="Ej: Ana Torres">
+        <label for="r-correo">Correo electrónico</label>
+        <input id="r-correo" type="email" autocomplete="email" required placeholder="correo@ejemplo.com">
+        <label for="r-pass">Contraseña</label>
+        <input id="r-pass" type="password" autocomplete="new-password" minlength="8" required placeholder="Mínimo 8 caracteres">
+        <label for="r-pass2">Repite la contraseña</label>
+        <input id="r-pass2" type="password" autocomplete="new-password" required>
+        <button class="btn btn-primario ancho" type="submit">Crear cuenta</button>
+        <p class="msg" id="msgRegistro" role="status" aria-live="polite"></p>
+        <p class="cambio">¿Ya tienes cuenta? <button type="button" class="enlace" data-panel="login">Inicia sesión</button></p>
+      </form>
+
+      <form class="form panel" id="panel-login" role="tabpanel" aria-labelledby="tab-login" hidden novalidate>
+        <h1>Bienvenido de nuevo</h1>
+        <p class="sub">Entra con el correo y la contraseña que registraste.</p>
+        <label for="l-correo">Correo electrónico</label>
+        <input id="l-correo" type="email" autocomplete="email" required placeholder="correo@ejemplo.com">
+        <label for="l-pass">Contraseña</label>
+        <input id="l-pass" type="password" autocomplete="current-password" required>
+        <button class="btn btn-primario ancho" type="submit">Iniciar sesión</button>
+        <p class="msg" id="msgLogin" role="status" aria-live="polite"></p>
+        <p class="cambio">¿Aún no tienes cuenta? <button type="button" class="enlace" data-panel="registro">Crea una</button></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="pie">
+  <div class="contenedor pie-grid">
+    <div>
+      <p class="pie-marca">Casa Migaja</p>
+      <p>Pastelería artesanal. Hornamos cada mañana desde las 5:00.</p>
+    </div>
+    <div>
+      <p class="pie-tit">Visítanos</p>
+      <p>Calle de los Almendros 24<br>Lun a Sáb 7:00–20:00<br>Dom 8:00–14:00</p>
+    </div>
+    <div>
+      <p class="pie-tit">Enlaces</p>
+      <p><a href="productos.html">Productos</a><br><a href="cuenta.html">Mi cuenta</a><br><a href="/">Plataforma Call Center</a></p>
+    </div>
+  </div>
+  <p class="pie-copy">© 2026 Casa Migaja. Todos los derechos reservados.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

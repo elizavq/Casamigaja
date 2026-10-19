@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto · Casa Migaja</title>
+<meta name="description" content="Casa Migaja: pastelería artesanal. Tortas, tartas, croissants y panes hechos cada mañana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="contenedor barra">
+    <a class="marca" href="index.html" aria-label="Casa Migaja, inicio">Casa Migaja</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="index.html">Inicio</a><a href="productos.html">Productos</a><a href="nosotros.html">Nosotros</a><a href="contacto.html" class="activo" aria-current="page">Contacto</a>
+      <a class="btn btn-borde" href="cuenta.html">Iniciar sesión</a>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+
+<section class="titulo-pag"><div class="contenedor"><h1>Contacto y pedidos</h1><p class="lead">Escríbenos para encargar una torta o resolver cualquier duda.</p></div></section>
+<section class="seccion">
+  <div class="contenedor dos-col">
+    <div>
+      <h2>Datos de la tienda</h2>
+      <ul class="datos">
+        <li><strong>Dirección</strong><br>Calle de los Almendros 24</li>
+        <li><strong>Teléfono</strong><br>+34 600 123 456</li>
+        <li><strong>Correo</strong><br>hola@casamigaja.example</li>
+        <li><strong>Horario</strong><br>Lun a Sáb 7:00–20:00<br>Dom 8:00–14:00</li>
+      </ul>
+    </div>
+    <form class="form" id="formContacto" novalidate>
+      <h2>Haz tu pedido</h2>
+      <label for="c-nombre">Nombre completo</label>
+      <input id="c-nombre" name="nombre" type="text" autocomplete="name" required placeholder="Ej: Ana Torres">
+      <label for="c-correo">Correo electrónico</label>
+      <input id="c-correo" name="correo" type="email" autocomplete="email" required placeholder="correo@ejemplo.com">
+      <label for="c-tipo">¿Qué necesitas?</label>
+      <select id="c-tipo" name="tipo">
+        <option>Torta personalizada</option>
+        <option>Pedido para evento</option>
+        <option>Pedido del día</option>
+        <option>Otra consulta</option>
+      </select>
+      <label for="c-fecha">Fecha del evento</label>
+      <input id="c-fecha" name="fecha" type="date">
+      <label for="c-msg">Mensaje</label>
+      <textarea id="c-msg" name="mensaje" rows="4" placeholder="Cuéntanos sabores, número de invitados, alergias…"></textarea>
+      <button class="btn btn-primario ancho" type="submit">Enviar pedido</button>
+      <p class="msg" id="msgContacto" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+<footer class="pie">
+  <div class="contenedor pie-grid">
+    <div>
+      <p class="pie-marca">Casa Migaja</p>
+      <p>Pastelería artesanal. Hornamos cada mañana desde las 5:00.</p>
+    </div>
+    <div>
+      <p class="pie-tit">Visítanos</p>
+      <p>Calle de los Almendros 24<br>Lun a Sáb 7:00–20:00<br>Dom 8:00–14:00</p>
+    </div>
+    <div>
+      <p class="pie-tit">Enlaces</p>
+      <p><a href="productos.html">Productos</a><br><a href="cuenta.html">Mi cuenta</a><br><a href="/">Plataforma Call Center</a></p>
+    </div>
+  </div>
+  <p class="pie-copy">© 2026 Casa Migaja. Todos los derechos reservados.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

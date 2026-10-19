@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio · Casa Migaja</title>
+<meta name="description" content="Casa Migaja: pastelería artesanal. Tortas, tartas, croissants y panes hechos cada mañana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="contenedor barra">
+    <a class="marca" href="index.html" aria-label="Casa Migaja, inicio">Casa Migaja</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="index.html" class="activo" aria-current="page">Inicio</a><a href="productos.html">Productos</a><a href="nosotros.html">Nosotros</a><a href="contacto.html">Contacto</a>
+      <a class="btn btn-borde" href="cuenta.html">Iniciar sesión</a>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+
+<section class="hero">
+  <div class="contenedor hero-grid">
+    <div class="hero-txt">
+      <p class="sello">Horneado hoy a las 5:00</p>
+      <h1>Pasteles que saben a casa</h1>
+      <p class="lead">Tortas, tartas y panes artesanales hechos con mantequilla de verdad, fruta de temporada y mucha paciencia.</p>
+      <div class="acciones">
+        <a class="btn btn-primario" href="productos.html">Ver productos</a>
+        <a class="btn btn-borde" href="contacto.html">Hacer un pedido</a>
+      </div>
+    </div>
+    <div class="hero-img"><svg class="torta" viewBox="0 0 320 300" role="img" aria-label="Ilustración de una torta de tres pisos con frambuesas">
+  <ellipse cx="160" cy="278" rx="130" ry="14" fill="#7a1f3d" opacity=".12"/>
+  <rect x="30" y="200" width="260" height="70" rx="14" fill="#7a1f3d"/>
+  <path d="M30 222c20 16 40-6 62 8s42-8 66 6 44-10 68 4 42-6 64 2v-30H30z" fill="#fbeff1"/>
+  <rect x="70" y="140" width="180" height="62" rx="12" fill="#bfd8b8"/>
+  <path d="M70 160c16 14 32-4 50 8s34-8 52 6 30-8 48 4 24-4 30 0v-26H70z" fill="#fffdf6"/>
+  <rect x="108" y="88" width="104" height="54" rx="12" fill="#ffd978"/>
+  <path d="M108 106c12 12 22-4 36 6s24-6 34 4 22-4 34 2V96H108z" fill="#fff6d8"/>
+  <line x1="160" y1="88" x2="160" y2="60" stroke="#2b1b24" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="160" cy="50" rx="8" ry="12" fill="#e8553d"/>
+  <g fill="#c92a55"><circle cx="128" cy="82" r="9"/><circle cx="192" cy="82" r="9"/><circle cx="150" cy="78" r="9"/><circle cx="172" cy="78" r="9"/></g>
+  <g fill="#7a1f3d"><circle cx="78" cy="134" r="7"/><circle cx="242" cy="134" r="7"/><circle cx="60" cy="194" r="7"/><circle cx="260" cy="194" r="7"/></g>
+</svg></div>
+  </div>
+</section>
+
+<section class="seccion">
+  <div class="contenedor">
+    <h2>Lo más pedido de la semana</h2>
+    <div class="grid3">
+      <article class="tarjeta"><div class="foto f1" role="img" aria-label="Tarta de frambuesa"></div><h3>Tarta de frambuesa</h3><p>Base de almendra, crema pastelera de vainilla y frambuesas frescas.</p><p class="precio">$18.00</p></article>
+      <article class="tarjeta"><div class="foto f2" role="img" aria-label="Croissant de almendra"></div><h3>Croissant de almendra</h3><p>Laminado a mano durante 18 horas y relleno de crema de almendra.</p><p class="precio">$3.50</p></article>
+      <article class="tarjeta"><div class="foto f3" role="img" aria-label="Torta de chocolate"></div><h3>Torta de chocolate</h3><p>Tres capas de bizcocho húmedo con ganache de chocolate al 70%.</p><p class="precio">$26.00</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="seccion banda">
+  <div class="contenedor grid3 valores">
+    <div><h3>Ingredientes reales</h3><p>Mantequilla, huevos de campo y fruta de productores locales. Sin saborizantes artificiales.</p></div>
+    <div><h3>Hecho cada día</h3><p>Nada se congela. Lo que ves en la vitrina salió del horno esa misma mañana.</p></div>
+    <div><h3>A tu medida</h3><p>Tortas personalizadas para cumpleaños, bodas y celebraciones. Pide con 3 días de aviso.</p></div>
+  </div>
+</section>
+
+<section class="seccion">
+  <div class="contenedor cta">
+    <h2>¿Tienes una celebración cerca?</h2>
+    <p>Cuéntanos la fecha y el número de invitados y te preparamos una propuesta.</p>
+    <a class="btn btn-primario" href="contacto.html">Pedir presupuesto</a>
+  </div>
+</section>
+
+</main>
+<footer class="pie">
+  <div class="contenedor pie-grid">
+    <div>
+      <p class="pie-marca">Casa Migaja</p>
+      <p>Pastelería artesanal. Hornamos cada mañana desde las 5:00.</p>
+    </div>
+    <div>
+      <p class="pie-tit">Visítanos</p>
+      <p>Calle de los Almendros 24<br>Lun a Sáb 7:00–20:00<br>Dom 8:00–14:00</p>
+    </div>
+    <div>
+      <p class="pie-tit">Enlaces</p>
+      <p><a href="productos.html">Productos</a><br><a href="cuenta.html">Mi cuenta</a><br><a href="/">Plataforma Call Center</a></p>
+    </div>
+  </div>
+  <p class="pie-copy">© 2026 Casa Migaja. Todos los derechos reservados.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

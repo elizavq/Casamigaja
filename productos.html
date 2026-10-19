@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Productos · Casa Migaja</title>
+<meta name="description" content="Casa Migaja: pastelería artesanal. Tortas, tartas, croissants y panes hechos cada mañana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="contenedor barra">
+    <a class="marca" href="index.html" aria-label="Casa Migaja, inicio">Casa Migaja</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="index.html">Inicio</a><a href="productos.html" class="activo" aria-current="page">Productos</a><a href="nosotros.html">Nosotros</a><a href="contacto.html">Contacto</a>
+      <a class="btn btn-borde" href="cuenta.html">Iniciar sesión</a>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+
+<section class="titulo-pag"><div class="contenedor"><h1>Nuestros productos</h1><p class="lead">Elige por categoría. Todo se hornea el mismo día.</p></div></section>
+<section class="seccion">
+  <div class="contenedor">
+    <div class="filtros" role="group" aria-label="Filtrar por categoría">
+      <button class="filtro activo" data-filtro="todos">Todos</button>
+      <button class="filtro" data-filtro="Tortas">Tortas</button>
+      <button class="filtro" data-filtro="Tartas">Tartas</button>
+      <button class="filtro" data-filtro="Panadería">Panadería</button>
+      <button class="filtro" data-filtro="Dulces">Dulces</button>
+    </div>
+    <div class="grid3" id="listado"><article class="tarjeta" data-cat="Tartas"><div class="foto f1" role="img" aria-label="Tarta de frambuesa"></div><p class="cat">Tartas</p><h3>Tarta de frambuesa</h3><p>Base de almendra, crema de vainilla y frambuesas frescas.</p><p class="precio">$18.00</p></article><article class="tarjeta" data-cat="Panadería"><div class="foto f2" role="img" aria-label="Croissant de almendra"></div><p class="cat">Panadería</p><h3>Croissant de almendra</h3><p>Laminado a mano y relleno de crema de almendra.</p><p class="precio">$3.50</p></article><article class="tarjeta" data-cat="Tortas"><div class="foto f3" role="img" aria-label="Torta de chocolate"></div><p class="cat">Tortas</p><h3>Torta de chocolate</h3><p>Tres capas con ganache de chocolate al 70%.</p><p class="precio">$26.00</p></article><article class="tarjeta" data-cat="Tartas"><div class="foto f4" role="img" aria-label="Cheesecake de maracuyá"></div><p class="cat">Tartas</p><h3>Cheesecake de maracuyá</h3><p>Queso crema suave sobre base de galleta y gel de maracuyá.</p><p class="precio">$22.00</p></article><article class="tarjeta" data-cat="Dulces"><div class="foto f5" role="img" aria-label="Macarons (caja de 6)"></div><p class="cat">Dulces</p><h3>Macarons (caja de 6)</h3><p>Pistacho, frambuesa, chocolate, limón, vainilla y café.</p><p class="precio">$12.00</p></article><article class="tarjeta" data-cat="Panadería"><div class="foto f6" role="img" aria-label="Pan de masa madre"></div><p class="cat">Panadería</p><h3>Pan de masa madre</h3><p>Fermentación de 24 horas, corteza crujiente y miga abierta.</p><p class="precio">$6.00</p></article><article class="tarjeta" data-cat="Tartas"><div class="foto f1" role="img" aria-label="Tarta de limón"></div><p class="cat">Tartas</p><h3>Tarta de limón</h3><p>Crema cítrica con merengue tostado en el momento.</p><p class="precio">$16.00</p></article><article class="tarjeta" data-cat="Panadería"><div class="foto f2" role="img" aria-label="Brioche de canela"></div><p class="cat">Panadería</p><h3>Brioche de canela</h3><p>Esponjoso, con relleno de canela y glaseado de vainilla.</p><p class="precio">$4.00</p></article><article class="tarjeta" data-cat="Dulces"><div class="foto f3" role="img" aria-label="Brownie de nueces"></div><p class="cat">Dulces</p><h3>Brownie de nueces</h3><p>Denso, con centro suave y nueces tostadas.</p><p class="precio">$3.00</p></article></div>
+    <p class="nota">Los precios pueden variar en tortas personalizadas. <a href="contacto.html">Pide un presupuesto</a>.</p>
+  </div>
+</section>
+
+</main>
+<footer class="pie">
+  <div class="contenedor pie-grid">
+    <div>
+      <p class="pie-marca">Casa Migaja</p>
+      <p>Pastelería artesanal. Hornamos cada mañana desde las 5:00.</p>
+    </div>
+    <div>
+      <p class="pie-tit">Visítanos</p>
+      <p>Calle de los Almendros 24<br>Lun a Sáb 7:00–20:00<br>Dom 8:00–14:00</p>
+    </div>
+    <div>
+      <p class="pie-tit">Enlaces</p>
+      <p><a href="productos.html">Productos</a><br><a href="cuenta.html">Mi cuenta</a><br><a href="/">Plataforma Call Center</a></p>
+    </div>
+  </div>
+  <p class="pie-copy">© 2026 Casa Migaja. Todos los derechos reservados.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
